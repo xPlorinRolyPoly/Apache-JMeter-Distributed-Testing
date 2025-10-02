@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  replicas: 1
+  template:
+    spec:
+      volumes:
+        - name: influxdb-data
+          hostPath:
+            path: /home/repo/k8s/base/influxdb/docker-volume
+            type: DirectoryOrCreate
+        - name: dashboards
+          hostPath:
+            path: /home/repo/k8s/base/influxdb/dashboards
+            type: Directory
+      containers:
+        - name: influxdb
+          image: influxdb:2.0.6-alpine
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 8086
+          volumeMounts:
+            - mountPath: /var/lib/influxdb2
+              name: influxdb-data
+            - name: dashboards
+              mountPath: /home/dashboards
+          envFrom:
+            - secretRef:
+                name: secret
+            - configMapRef:
+                name: cm

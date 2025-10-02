@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: grafana
+          image: grafana/grafana:8.0.1
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: dashboards
+              mountPath: /var/lib/grafana/dashboards
+            - name: datasources-config
+              mountPath: /etc/grafana/provisioning/datasources
+            - name: dashboards-config
+              mountPath: /etc/grafana/provisioning/dashboards
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - secretRef:
+                name: secret
+      volumes:
+        - name: dashboards
+          hostPath:
+            path: /home/repo/k8s/base/grafana/dashboards
+            type: Directory
+        - name: datasources-config
+          configMap:
+            name: datasources-cm
+        - name: dashboards-config
+          configMap:
+            name: dashboards-cm

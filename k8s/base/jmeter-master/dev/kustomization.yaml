@@ -1,0 +1,12 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - configmap.yaml
+namespace: ns-test-automation-jmeter-dev
+nameSuffix: -jmeter-master
+commonLabels:
+  app.kubernetes.io/name: jmeter-master
+  app.kubernetes.io/component: test-automation-jmeter
+  app.kubernetes.io/part-of: nft-jmeter

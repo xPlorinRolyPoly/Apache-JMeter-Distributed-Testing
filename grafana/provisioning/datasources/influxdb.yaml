@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+  - name: Influxdb
+    type: influxdb
+    access: proxy
+    url: http://host.docker.internal:9086
+    basicAuth: true
+    isDefault: true
+    secureJsonData:
+      token: ScHCbdo6A2goQ9afT3iGnh4VoZUvViEwmH8dpcGWm45B2mfAN2n1EM33oG5otv2cCTvkiO92-CFpC9wHpQXNVQ==
+    jsonData:
+      version: Flux
+      organization: alps
+      defaultBucket: jmeter
+      tlsSkipVerify: true

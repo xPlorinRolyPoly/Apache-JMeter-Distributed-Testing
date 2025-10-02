@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: redis-db
+          image: redis:latest
+          imagePullPolicy: IfNotPresent
+          command:
+            - /bin/sh
+            - -c
+            - |
+              redis-server --requirepass "redis@alpana" \
+              --tls-port 6379 --port 0 --tls-cert-file /data/domain.crt \
+              --tls-key-file /data/domain.key \
+              --tls-ca-cert-file /data/domain.crt \
+              --tls-auth-clients no
+          volumeMounts:
+            - name: cert-config
+              mountPath: /data
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "100m"
+          ports:
+            - containerPort: 6379
+      volumes:
+        - name: cert-config
+          configMap:
+            name: cert-cm

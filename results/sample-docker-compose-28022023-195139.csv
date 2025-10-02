@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1677610323053,3545,Initialize jedis connection,200,OK,jmeter-server-2-setUp Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610323093,3507,Initialize jedis connection,200,OK,jmeter-server-1-setUp Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610328157,1050,Get IP: e82dff22858c-28022023-1952078-42012,200,OK,jmeter-server-2-Thread Group Client Inspection 3-1,text,true,,262,142,1,2,https://httpbin.org/ip,1040,0,930
+1677610328317,888,Get IP: 56b2d48d0d84-28022023-1952079-49956,200,OK,jmeter-server-1-Thread Group Client Inspection 3-1,text,true,,262,142,1,2,https://httpbin.org/ip,882,0,768
+1677610328140,1070,BasicAuth: e82dff22858c-28022023-1952078-34172,401,UNAUTHORIZED,jmeter-server-2-Thread Group Auth 2-1,,false,,250,165,1,2,https://httpbin.org/basic-auth/alpana/httpbin,1070,0,956
+1677610328317,895,BasicAuth: 56b2d48d0d84-28022023-1952079-89961,401,UNAUTHORIZED,jmeter-server-1-Thread Group Auth 2-1,,false,,250,165,1,2,https://httpbin.org/basic-auth/alpana/httpbin,895,0,767
+1677610332543,524,Get: e82dff22858c-28022023-1952125-87784,200,OK,jmeter-server-2-Thread Group HTTP Methods 1-1,text,true,,527,143,1,1,https://httpbin.org/get,524,0,420
+1677610332660,515,Get: 56b2d48d0d84-28022023-1952126-76429,200,OK,jmeter-server-1-Thread Group HTTP Methods 1-1,text,true,,527,143,1,1,https://httpbin.org/get,515,0,409
+1677610393179,46,Set up jedis connection,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393266,9,Get Redis Data: Get IP: e82dff22858c-28022023-1952078-42012,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393286,9,Get Redis Data: Get IP: 56b2d48d0d84-28022023-1952079-49956,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393309,1,Get Redis Data: BasicAuth: 56b2d48d0d84-28022023-1952079-89961,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393319,1,Get Redis Data: BasicAuth: e82dff22858c-28022023-1952078-34172,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393327,1,Get Redis Data: Get: e82dff22858c-28022023-1952125-87784,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393348,1,Get Redis Data: Get: 56b2d48d0d84-28022023-1952126-76429,200,OK,jmeter-server-2-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677610393382,64,Set up jedis connection,200,OK,jmeter-server-1-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0

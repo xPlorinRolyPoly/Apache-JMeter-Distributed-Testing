@@ -1,0 +1,59 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-automation
+spec:
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        vault.hashicorp.com/agent-init-first: "true"
+        vault.hashicorp.com/agent-inject: "true"
+        vault.hashicorp.com/agent-pre-populate-only: "true"
+        vault.hashicorp.com/auth-path: auth/kubernetes-nft-test-automation-dev
+        vault.hashicorp.com/agent-inject-secret-credentials.conf: nft/test-automation/prod/jmeter-dev
+        vault.hashicorp.com/agent-inject-template-credentials.conf: |
+          {{- with secret "nft/test-automation/prod/jmeter-dev" -}}
+          influxdb.token={{ .Data.data.INFLUX_TOKEN }}
+          api.user.name={{ .Data.data.API_USERNAME }}
+          api.user.password={{ .Data.data.API_PASSWORD }}
+          {{- end -}}
+        vault.hashicorp.com/role: reader
+    spec:
+      serviceAccountName: sa-test-automation
+      containers:
+        - name: jmeter-master
+          image: alpanachaphalkar/jmeter:latest
+          imagePullPolicy: IfNotPresent
+          args: ["master"]
+          env:
+            - name: JVM_ARGS
+              value: "-Xms512m -Xmx1g"
+          volumeMounts:
+            - name: config-properties
+              mountPath: /jmeter/configs
+            - name: repo
+              mountPath: /jmeter/repo
+            - name: redis-ca-keystore
+              mountPath: /tmp/server-ca.jks
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "300m"
+          ports:
+            - containerPort: 1099
+            - containerPort: 50000
+            - containerPort: 60000
+      volumes:
+        - name: config-properties
+          configMap:
+            name: config-properties
+        - name: repo
+          hostPath:
+            path: /home/repo
+            type: Directory
+        - name: redis-ca-keystore
+          hostPath:
+            path: /home/repo/k8s/base/jmeter-master/redis-db-ca.jks
+            type: File

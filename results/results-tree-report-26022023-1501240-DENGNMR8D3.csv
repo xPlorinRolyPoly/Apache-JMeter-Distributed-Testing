@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1677420097309,1076,GetIP: DENGNMR8D3-26022023-1501373-33182,200,OK,Thread Group CLient Inspection 3-1,text,true,,261,142,1,2,https://httpbin.org/ip,1076,0,410
+1677420097301,1929,BasicAuth: DENGNMR8D3-26022023-1501372-86885,401,UNAUTHORIZED,Thread Group Auth 2-1,,false,,250,160,1,1,https://httpbin.org/basic-auth/test/test,1929,0,418
+1677420107303,1294,Get: DENGNMR8D3-26022023-1501473-26617,200,OK,Thread Group HTTP Methods 1-1,text,true,,526,143,1,1,https://httpbin.org/get,1293,0,356

@@ -1,0 +1,160 @@
+2023-02-28 18:30:55,265 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-02-28 18:30:55,421 INFO o.a.j.JMeter: Loading user properties from: /jmeter/apache-jmeter-5.4.3/bin/user.properties
+2023-02-28 18:30:55,427 INFO o.a.j.JMeter: Loading system properties from: /jmeter/apache-jmeter-5.4.3/bin/system.properties
+2023-02-28 18:30:55,432 INFO o.a.j.JMeter: Setting System property: server_port=1099
+2023-02-28 18:30:55,437 INFO o.a.j.JMeter: Setting System property: server.rmi.localport=50000
+2023-02-28 18:30:55,443 INFO o.a.j.JMeter: Setting System property: server_port=1099
+2023-02-28 18:30:55,449 INFO o.a.j.JMeter: Setting JMeter property: server.rmi.ssl.disable=true
+2023-02-28 18:30:55,479 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2023-02-28 18:30:55,496 INFO o.a.j.JMeter: Version 5.4.3
+2023-02-28 18:30:55,501 INFO o.a.j.JMeter: java.version=11.0.17
+2023-02-28 18:30:55,504 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2023-02-28 18:30:55,505 INFO o.a.j.JMeter: os.name=Linux
+2023-02-28 18:30:55,505 INFO o.a.j.JMeter: os.arch=amd64
+2023-02-28 18:30:55,517 INFO o.a.j.JMeter: os.version=5.10.16.3-microsoft-standard-WSL2
+2023-02-28 18:30:55,517 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-02-28 18:30:55,518 INFO o.a.j.JMeter: java.awt.headless=true
+2023-02-28 18:30:55,518 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-02-28 18:30:55,519 INFO o.a.j.JMeter: Available Processors =4
+2023-02-28 18:30:55,548 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-02-28 18:30:55,552 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-02-28 18:30:55,554 INFO o.a.j.JMeter: JMeterHome=/jmeter/apache-jmeter-5.4.3
+2023-02-28 18:30:55,555 INFO o.a.j.JMeter: user.dir  =/jmeter/apache-jmeter-5.4.3
+2023-02-28 18:30:55,557 INFO o.a.j.JMeter: PWD       =/jmeter/apache-jmeter-5.4.3
+2023-02-28 18:30:55,561 INFO o.a.j.JMeter: IP: 172.28.5.21 Name: e82dff22858c FullName: e82dff22858c
+2023-02-28 18:30:55,586 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-28 18:30:55,588 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-28 18:30:56,043 INFO o.a.j.e.RemoteJMeterEngineImpl: Starting backing engine on 1099
+2023-02-28 18:30:56,044 INFO o.a.j.r.RmiUtils: System property 'java.rmi.server.hostname' is not defined, using localHost address
+2023-02-28 18:30:56,045 INFO o.a.j.r.RmiUtils: Local IP address=172.28.5.21
+2023-02-28 18:30:56,045 INFO o.a.j.e.RemoteJMeterEngineImpl: IP address is a site-local address; this may cause problems with remote access.
+	Can be overridden by defining the system property 'java.rmi.server.hostname' - see jmeter-server script file
+2023-02-28 18:30:56,046 INFO o.a.j.e.RemoteJMeterEngineImpl: Creating RMI registry (server.rmi.create=true)
+2023-02-28 18:30:56,046 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-28 18:30:56,046 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-28 18:30:56,061 INFO o.a.j.e.RemoteJMeterEngineImpl: Bound to RMI registry on port 1099
+2023-02-28 18:51:59,627 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-02-28 18:51:59,664 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-28 18:51:59,665 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-28 18:51:59,665 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-28 18:51:59,666 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-28 18:51:59,666 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-02-28 18:51:59,666 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-02-28 18:51:59,717 INFO o.a.j.e.RemoteJMeterEngineImpl: Creating JMeter engine on host jmeter-server-2 base '.'
+2023-02-28 18:51:59,717 INFO o.a.j.e.RemoteJMeterEngineImpl: Remote client host: 172.28.5.30
+2023-02-28 18:51:59,726 INFO o.a.j.s.FileServer: Default base='/jmeter/apache-jmeter-5.4.3'
+2023-02-28 18:51:59,727 INFO o.a.j.s.FileServer: Set new base='.'
+2023-02-28 18:51:59,732 INFO o.a.j.e.StandardJMeterEngine: Applying properties {redis.ssl.enable=true, redis.port=6379, influxdb.bucket=jmeter, influxdb.hostname=influxdb, api.host=httpbin.org, mode=org.ifisolution.plugins.samplers.InfluxSampleSender, test.name=sample, test.runId=, reports.dir=/jmeter/repo/results, api.user.name=alpana, save_error_response=true, save_measure_sub_result=, redis.ssl.truststore.password=redis-cert@alpana, ramp.up.seconds=1, redis.host=redis, redis.ssl.truststore.file=/tmp/server-ca.jks, api.protocol=https, startup.delay.seconds=5, duration.seconds=300, influxdb.port=8086, influxdb.token=ScHCbdo6A2goQ9afT3iGnh4VoZUvViEwmH8dpcGWm45B2mfAN2n1EM33oG5otv2cCTvkiO92-CFpC9wHpQXNVQ==, redis.password=redis@alpana, master_send_result=true, number.of.threads=1, loop.count=1, api.user.password=httpbin, influxdb.organization=alps, redis.ssl.truststore.type=JKS}
+2023-02-28 18:51:59,734 INFO o.a.j.e.RemoteJMeterEngineImpl: Running test
+2023-02-28 18:51:59,742 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-02-28 18:51:59,743 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-02-28 18:51:59,754 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-02-28 18:51:59,754 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-02-28 18:52:03,031 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2023-02-28 18:52:03,033 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : setUp Thread Group 
+2023-02-28 18:52:03,034 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group setUp Thread Group.
+2023-02-28 18:52:03,034 INFO o.a.j.e.StandardJMeterEngine: Test will stop abruptly on error
+2023-02-28 18:52:03,035 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-02-28 18:52:03,040 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-02-28 18:52:03,041 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2023-02-28 18:52:03,044 INFO o.a.j.t.JMeterThread: Thread started: jmeter-server-2-setUp Thread Group 1-1
+2023-02-28 18:52:03,050 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-02-28 18:52:03,050 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-02-28 18:52:03,051 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-02-28 18:52:03,051 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-02-28 18:52:05,790 INFO o.a.j.p.j.s.J.Initialize jedis connection: Redis: Connection Details: Host:redis port:6379 ssl_enable: true
+2023-02-28 18:52:06,538 INFO o.a.j.p.j.s.J.Initialize jedis connection: Redis: connected! ping --> PONG
+2023-02-28 18:52:06,573 INFO o.a.j.p.j.s.J.Initialize jedis connection: Redis: Deleted all data - OK
+2023-02-28 18:52:06,598 INFO o.a.j.p.j.s.J.Initialize jedis connection: Redis: disconnected and closed!
+2023-02-28 18:52:07,105 INFO o.i.i.InfluxClient: Executing Initial Health Check to http://influxdb:8086
+2023-02-28 18:52:07,250 INFO o.i.i.InfluxClient: Influx Database health status: pass
+2023-02-28 18:52:07,250 INFO o.i.m.i.TestResultMeasureManager: Acquired Influx Client to http://influxdb:8086
+2023-02-28 18:52:07,324 INFO o.a.j.t.JMeterThread: Thread is done: jmeter-server-2-setUp Thread Group 1-1
+2023-02-28 18:52:07,347 INFO o.a.j.t.JMeterThread: Thread finished: jmeter-server-2-setUp Thread Group 1-1
+2023-02-28 18:52:07,353 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2023-02-28 18:52:07,515 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group HTTP Methods
+2023-02-28 18:52:07,517 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group HTTP Methods.
+2023-02-28 18:52:07,517 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-02-28 18:52:07,518 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=true
+2023-02-28 18:52:07,522 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-02-28 18:52:07,523 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group Auth
+2023-02-28 18:52:07,523 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group Auth.
+2023-02-28 18:52:07,524 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-02-28 18:52:07,524 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2023-02-28 18:52:07,542 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-02-28 18:52:07,543 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Thread Group Client Inspection
+2023-02-28 18:52:07,544 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group Client Inspection.
+2023-02-28 18:52:07,545 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-02-28 18:52:07,561 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=1 delayedStart=false
+2023-02-28 18:52:07,567 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2023-02-28 18:52:07,569 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-02-28 18:52:07,578 INFO o.a.j.t.JMeterThread: Thread started: jmeter-server-2-Thread Group Auth 2-1
+2023-02-28 18:52:07,576 INFO o.a.j.t.JMeterThread: Thread started: jmeter-server-2-Thread Group Client Inspection 3-1
+2023-02-28 18:52:07,846 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = e82dff22858c
+2023-02-28 18:52:07,867 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2023-02-28 18:52:08,614 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2023-02-28 18:52:08,624 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2023-02-28 18:52:08,625 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2023-02-28 18:52:08,729 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2023-02-28 18:52:08,733 INFO o.a.j.u.SSLManager: KeyStore created OK
+2023-02-28 18:52:08,734 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2023-02-28 18:52:08,735 INFO o.a.j.u.SSLManager: TrustStore Location: /tmp/server-ca.jks
+2023-02-28 18:52:08,736 INFO o.a.j.u.SSLManager: TrustStore created OK, Type: JKS
+2023-02-28 18:52:08,741 INFO o.a.j.u.SSLManager: Truststore loaded OK from file
+2023-02-28 18:52:09,567 INFO o.a.j.e.J.Get IP: Redis: Connection Details: Host:redis port:6379 ssl_enable: true
+2023-02-28 18:52:09,613 INFO o.a.j.e.J.Get IP: Redis: connected! ping --> PONG
+2023-02-28 18:52:09,628 INFO o.a.j.e.J.Get IP: Response code: 200
+2023-02-28 18:52:09,797 INFO o.a.j.e.J.Get IP: Redis: 1
+2023-02-28 18:52:09,809 INFO o.a.j.e.J.Get IP: Redis: Write is successful!
+2023-02-28 18:52:09,814 INFO o.a.j.e.J.Get IP: Redis: disconnected and closed!
+2023-02-28 18:52:09,820 INFO o.a.j.e.J.BasicAuth: Redis: Connection Details: Host:redis port:6379 ssl_enable: true
+2023-02-28 18:52:09,881 INFO o.a.j.e.J.BasicAuth: Redis: connected! ping --> PONG
+2023-02-28 18:52:09,881 INFO o.a.j.e.J.BasicAuth: Response code: 401
+2023-02-28 18:52:09,889 INFO o.a.j.e.J.BasicAuth: Redis: 4
+2023-02-28 18:52:09,896 INFO o.a.j.e.J.BasicAuth: Redis: Write is successful!
+2023-02-28 18:52:09,898 INFO o.a.j.e.J.BasicAuth: Redis: disconnected and closed!
+2023-02-28 18:52:09,909 INFO o.a.j.t.JMeterThread: Thread is done: jmeter-server-2-Thread Group Client Inspection 3-1
+2023-02-28 18:52:09,909 INFO o.a.j.t.JMeterThread: Thread finished: jmeter-server-2-Thread Group Client Inspection 3-1
+2023-02-28 18:52:09,961 INFO o.a.j.t.JMeterThread: Thread is done: jmeter-server-2-Thread Group Auth 2-1
+2023-02-28 18:52:09,962 INFO o.a.j.t.JMeterThread: Thread finished: jmeter-server-2-Thread Group Auth 2-1
+2023-02-28 18:52:12,526 INFO o.a.j.t.JMeterThread: Thread started: jmeter-server-2-Thread Group HTTP Methods 1-1
+2023-02-28 18:52:13,130 INFO o.a.j.e.J.Get: Redis: Connection Details: Host:redis port:6379 ssl_enable: true
+2023-02-28 18:52:13,137 INFO o.a.j.e.J.Get: Redis: connected! ping --> PONG
+2023-02-28 18:52:13,138 INFO o.a.j.e.J.Get: Response code: 200
+2023-02-28 18:52:13,152 INFO o.a.j.e.J.Get: Redis: 5
+2023-02-28 18:52:13,152 INFO o.a.j.e.J.Get: Redis: Write is successful!
+2023-02-28 18:52:13,154 INFO o.a.j.e.J.Get: Redis: disconnected and closed!
+2023-02-28 18:52:13,172 INFO o.a.j.t.JMeterThread: Thread is done: jmeter-server-2-Thread Group HTTP Methods 1-1
+2023-02-28 18:52:13,173 INFO o.a.j.t.JMeterThread: Thread finished: jmeter-server-2-Thread Group HTTP Methods 1-1
+2023-02-28 18:52:13,174 INFO o.a.j.e.StandardJMeterEngine: Starting tearDown thread groups
+2023-02-28 18:52:13,175 INFO o.a.j.e.StandardJMeterEngine: Starting tearDown ThreadGroup: 1 : tearDown Thread Group
+2023-02-28 18:52:13,175 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group tearDown Thread Group.
+2023-02-28 18:52:13,175 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-02-28 18:52:13,176 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-02-28 18:52:13,179 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-02-28 18:53:13,176 INFO o.a.j.t.JMeterThread: Thread started: jmeter-server-2-tearDown Thread Group 1-1
+2023-02-28 18:53:13,210 INFO o.a.j.p.j.s.J.Set up jedis connection: Redis: Connection Details: Host:redis port:6379 ssl_enable: true
+2023-02-28 18:53:13,225 INFO o.a.j.p.j.s.J.Set up jedis connection: Redis: connected! ping --> PONG
+2023-02-28 18:53:13,261 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 6 record/s
+2023-02-28 18:53:13,275 INFO o.a.j.p.j.s.J.Get Redis Data: Get IP: e82dff22858c-28022023-1952078-42012: Got Sampler Name: Get IP: e82dff22858c-28022023-1952078-42012
+2023-02-28 18:53:13,285 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 5 record/s
+2023-02-28 18:53:13,287 INFO o.a.j.p.j.s.J.Get Redis Data: Get IP: 56b2d48d0d84-28022023-1952079-49956: Got Sampler Name: Get IP: 56b2d48d0d84-28022023-1952079-49956
+2023-02-28 18:53:13,307 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 4 record/s
+2023-02-28 18:53:13,310 INFO o.a.j.p.j.s.J.Get Redis Data: BasicAuth: 56b2d48d0d84-28022023-1952079-89961: Got Sampler Name: BasicAuth: 56b2d48d0d84-28022023-1952079-89961
+2023-02-28 18:53:13,318 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 3 record/s
+2023-02-28 18:53:13,319 INFO o.a.j.p.j.s.J.Get Redis Data: BasicAuth: e82dff22858c-28022023-1952078-34172: Got Sampler Name: BasicAuth: e82dff22858c-28022023-1952078-34172
+2023-02-28 18:53:13,326 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 2 record/s
+2023-02-28 18:53:13,328 INFO o.a.j.p.j.s.J.Get Redis Data: Get: e82dff22858c-28022023-1952125-87784: Got Sampler Name: Get: e82dff22858c-28022023-1952125-87784
+2023-02-28 18:53:13,344 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 1 record/s
+2023-02-28 18:53:13,349 INFO o.a.j.p.j.s.J.Get Redis Data: Get: 56b2d48d0d84-28022023-1952126-76429: Got Sampler Name: Get: 56b2d48d0d84-28022023-1952126-76429
+2023-02-28 18:53:13,359 INFO o.a.j.m.J.Get Redis Data: Redis: key jmeter:data contains 0 record/s
+2023-02-28 18:53:13,360 INFO o.a.j.m.J.Get Redis Data: Redis: Data not found
+2023-02-28 18:53:13,361 INFO o.a.j.m.J.Get Redis Data: Redis: disconnected and closed!
+2023-02-28 18:53:13,366 INFO o.a.j.t.JMeterThread: Stopping: jmeter-server-2-tearDown Thread Group 1-1
+2023-02-28 18:53:13,367 INFO o.a.j.t.JMeterThread: Thread finished: jmeter-server-2-tearDown Thread Group 1-1
+2023-02-28 18:53:13,368 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-02-28 18:53:13,411 INFO o.i.m.i.AbstractInfluxMeasure: Connection to Influx @ http://influxdb:8086 closed
+2023-02-28 18:53:13,415 INFO o.a.j.s.BatchSampleSender: Test Ended on jmeter-server-2
+2023-02-28 18:53:13,416 INFO o.a.j.s.BatchSampleSender: Test Ended on jmeter-server-2
+2023-02-28 18:53:13,417 INFO o.a.j.s.BatchSampleSender: Test Ended on jmeter-server-2
+2023-02-28 18:53:13,419 INFO o.a.j.e.StandardJMeterEngine: Test has ended on host jmeter-server-2 

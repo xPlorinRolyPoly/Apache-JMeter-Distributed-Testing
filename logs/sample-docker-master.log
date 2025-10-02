@@ -1,0 +1,329 @@
+2023-02-27 20:27:21,784 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-02-27 20:27:21,820 INFO o.a.j.JMeter: Loading user properties from: /jmeter/apache-jmeter-5.4.3/bin/user.properties
+2023-02-27 20:27:21,821 INFO o.a.j.JMeter: Loading system properties from: /jmeter/apache-jmeter-5.4.3/bin/system.properties
+2023-02-27 20:27:21,822 INFO o.a.j.JMeter: Setting JMeter property: server.rmi.ssl.disable=true
+2023-02-27 20:27:21,823 INFO o.a.j.JMeter: Setting Global properties from the file /jmeter/repo/configs/local-docker-dev.properties
+2023-02-27 20:27:21,826 INFO o.a.j.JMeter: Loading additional properties from: /jmeter/repo/configs/local-docker-dev.properties
+2023-02-27 20:27:21,831 INFO o.a.j.JMeter: Setting JMeter property: test.runId=R-27.02.2023-21:27:00
+2023-02-27 20:27:21,832 INFO o.a.j.JMeter: LogLevel: jmeter.engine=DEBUG
+2023-02-27 20:27:21,845 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2023-02-27 20:27:21,845 INFO o.a.j.JMeter: Version 5.4.3
+2023-02-27 20:27:21,846 INFO o.a.j.JMeter: java.version=11.0.17
+2023-02-27 20:27:21,851 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2023-02-27 20:27:21,852 INFO o.a.j.JMeter: os.name=Linux
+2023-02-27 20:27:21,856 INFO o.a.j.JMeter: os.arch=amd64
+2023-02-27 20:27:21,858 INFO o.a.j.JMeter: os.version=5.10.16.3-microsoft-standard-WSL2
+2023-02-27 20:27:21,858 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-02-27 20:27:21,859 INFO o.a.j.JMeter: java.awt.headless=true
+2023-02-27 20:27:21,860 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-02-27 20:27:21,860 INFO o.a.j.JMeter: Available Processors =4
+2023-02-27 20:27:21,870 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-02-27 20:27:21,871 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-02-27 20:27:21,871 INFO o.a.j.JMeter: JMeterHome=/jmeter/apache-jmeter-5.4.3
+2023-02-27 20:27:21,871 INFO o.a.j.JMeter: user.dir  =/jmeter/repo
+2023-02-27 20:27:21,872 INFO o.a.j.JMeter: PWD       =/jmeter/repo
+2023-02-27 20:27:21,872 INFO o.a.j.JMeter: IP: 172.28.5.10 Name: ab9a2ee1c826 FullName: ab9a2ee1c826
+2023-02-27 20:27:21,883 INFO o.a.j.s.FileServer: Default base='/jmeter/repo'
+2023-02-27 20:27:21,884 INFO o.a.j.s.FileServer: Set new base='/jmeter/repo/tests'
+2023-02-27 20:27:22,201 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-02-27 20:27:22,232 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-02-27 20:27:22,237 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-02-27 20:27:22,241 INFO o.a.j.s.SaveService: Loading file: /jmeter/repo/tests/sample.jmx
+2023-02-27 20:27:22,330 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-27 20:27:22,330 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-27 20:27:22,331 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-27 20:27:22,331 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-02-27 20:27:22,332 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-02-27 20:27:22,332 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-02-27 20:27:22,378 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-02-27 20:27:22,379 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-02-27 20:27:22,379 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-02-27 20:27:22,380 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-02-27 20:27:22,407 INFO o.a.j.JMeter: Creating summariser <summary>
+2023-02-27 20:27:22,413 INFO o.a.j.e.DistributedRunner: Configuring remote engine: 172.28.5.20
+2023-02-27 20:27:22,416 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:22,594 INFO o.a.j.e.DistributedRunner: Starting distributed test with remote engines: [172.28.5.20] @ Mon Feb 27 20:27:22 UTC 2023 (1677529642593)
+2023-02-27 20:27:22,595 INFO o.a.j.e.ClientJMeterEngine: running clientengine run method
+2023-02-27 20:27:22,604 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-02-27 20:27:22,605 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-02-27 20:27:23,719 DEBUG o.a.j.e.u.CompoundVariable: Function count: 64
+2023-02-27 20:27:23,723 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender()&influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}()&application=${__P(test.runId,R-18.02-12:30)}()&measurement=jmeter()&summaryOnly=false()&samplersRegex=.*()&percentiles=99;95;90()&testTitle=${__P(test.name,Sample)}()&eventTags=()&influxdbToken=${__P(influxdb.token,)}()&TAG_nodeName=${__machineName()}()
+2023-02-27 20:27:23,724 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.CollectionProperty: [influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender, influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}, application=${__P(test.runId,R-18.02-12:30)}, measurement=jmeter, summaryOnly=false, samplersRegex=.*, percentiles=99;95;90, testTitle=${__P(test.name,Sample)}, eventTags=, influxdbToken=${__P(influxdb.token,)}, TAG_nodeName=${__machineName()}]
+2023-02-27 20:27:23,725 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender
+2023-02-27 20:27:23,726 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxdbMetricsSender
+2023-02-27 20:27:23,727 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbMetricsSender
+2023-02-27 20:27:23,728 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender
+2023-02-27 20:27:23,729 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender
+2023-02-27 20:27:23,729 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,730 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,730 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender
+2023-02-27 20:27:23,731 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,731 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxdbUrl
+2023-02-27 20:27:23,732 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbUrl
+2023-02-27 20:27:23,732 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,734 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,735 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,735 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,736 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,736 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: application=${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,737 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: application
+2023-02-27 20:27:23,737 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: application
+2023-02-27 20:27:23,737 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,738 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,738 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,739 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,739 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: application=${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,740 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: measurement=jmeter
+2023-02-27 20:27:23,740 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: measurement
+2023-02-27 20:27:23,740 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: measurement
+2023-02-27 20:27:23,741 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: jmeter
+2023-02-27 20:27:23,741 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: jmeter
+2023-02-27 20:27:23,741 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,742 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,742 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: measurement=jmeter
+2023-02-27 20:27:23,743 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: summaryOnly=false
+2023-02-27 20:27:23,743 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: summaryOnly
+2023-02-27 20:27:23,744 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: summaryOnly
+2023-02-27 20:27:23,744 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: false
+2023-02-27 20:27:23,744 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: false
+2023-02-27 20:27:23,744 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,745 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,745 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: summaryOnly=false
+2023-02-27 20:27:23,746 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: samplersRegex=.*
+2023-02-27 20:27:23,746 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: samplersRegex
+2023-02-27 20:27:23,746 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: samplersRegex
+2023-02-27 20:27:23,747 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: .*
+2023-02-27 20:27:23,747 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: .*
+2023-02-27 20:27:23,748 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,748 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,749 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: samplersRegex=.*
+2023-02-27 20:27:23,749 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: percentiles=99;95;90
+2023-02-27 20:27:23,749 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: percentiles
+2023-02-27 20:27:23,750 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: percentiles
+2023-02-27 20:27:23,750 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: 99;95;90
+2023-02-27 20:27:23,750 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: 99;95;90
+2023-02-27 20:27:23,751 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,751 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,751 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: percentiles=99;95;90
+2023-02-27 20:27:23,752 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: testTitle=${__P(test.name,Sample)}
+2023-02-27 20:27:23,752 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: testTitle
+2023-02-27 20:27:23,753 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: testTitle
+2023-02-27 20:27:23,753 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(test.name,Sample)}
+2023-02-27 20:27:23,753 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(test.name,Sample)}
+2023-02-27 20:27:23,754 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,754 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,755 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: testTitle=${__P(test.name,Sample)}
+2023-02-27 20:27:23,755 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: eventTags=
+2023-02-27 20:27:23,755 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: eventTags
+2023-02-27 20:27:23,756 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: eventTags
+2023-02-27 20:27:23,756 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: 
+2023-02-27 20:27:23,756 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: 
+2023-02-27 20:27:23,756 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,757 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,757 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: eventTags=
+2023-02-27 20:27:23,757 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxdbToken=${__P(influxdb.token,)}
+2023-02-27 20:27:23,758 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxdbToken
+2023-02-27 20:27:23,758 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbToken
+2023-02-27 20:27:23,759 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.token,)}
+2023-02-27 20:27:23,759 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.token,)}
+2023-02-27 20:27:23,760 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,760 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,760 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbToken=${__P(influxdb.token,)}
+2023-02-27 20:27:23,761 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: TAG_nodeName=${__machineName()}
+2023-02-27 20:27:23,761 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: TAG_nodeName
+2023-02-27 20:27:23,761 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: TAG_nodeName
+2023-02-27 20:27:23,762 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__machineName()}
+2023-02-27 20:27:23,762 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__machineName()}
+2023-02-27 20:27:23,767 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,767 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,768 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: TAG_nodeName=${__machineName()}
+2023-02-27 20:27:23,768 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: [influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender, influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}, application=${__P(test.runId,R-18.02-12:30)}, measurement=jmeter, summaryOnly=false, samplersRegex=.*, percentiles=99;95;90, testTitle=${__P(test.name,Sample)}, eventTags=, influxdbToken=${__P(influxdb.token,)}, TAG_nodeName=${__machineName()}]
+2023-02-27 20:27:23,769 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.config.gui.ArgumentsPanel
+2023-02-27 20:27:23,769 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.config.Arguments
+2023-02-27 20:27:23,769 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: true
+2023-02-27 20:27:23,770 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: true
+2023-02-27 20:27:23,770 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxdbMetricsSender=org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender()&influxdbUrl=http://${__P(influxdb.hostname,127.0.0.1)}:${__P(influxdb.port,8086)}/api/v2/write?org=${__P(influxdb.organization,alps)}&bucket=${__P(influxdb.bucket,jmeter)}()&application=${__P(test.runId,R-18.02-12:30)}()&measurement=jmeter()&summaryOnly=false()&samplersRegex=.*()&percentiles=99;95;90()&testTitle=${__P(test.name,Sample)}()&eventTags=()&influxdbToken=${__P(influxdb.token,)}()&TAG_nodeName=${__machineName()}()
+2023-02-27 20:27:23,771 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.BackendListenerGui
+2023-02-27 20:27:23,771 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.BackendListener
+2023-02-27 20:27:23,772 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: InfluxDB Backend Listener
+2023-02-27 20:27:23,772 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: InfluxDB Backend Listener
+2023-02-27 20:27:23,772 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.BooleanProperty: true
+2023-02-27 20:27:23,773 DEBUG o.a.j.e.u.ValueReplacer: Won't replace true
+2023-02-27 20:27:23,773 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient
+2023-02-27 20:27:23,773 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient
+2023-02-27 20:27:23,774 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: 60000
+2023-02-27 20:27:23,774 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: 60000
+2023-02-27 20:27:23,775 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: testName=${__P(test.name,Sample)}()&nodeName=${__machineName()}()&runId=${__P(test.runId,R-18.02-12:30)}()&influxDBHttpScheme=http()&influxDBHost=${__P(influxdb.hostname,127.0.0.1)}()&influxDBPort=${__P(influxdb.port,8086)}()&influxDBToken=${__P(influxdb.token,)}()&influxDBOrganization=${__P(influxdb.organization,alps)}()&influxDBBucket=${__P(influxdb.bucket,jmeter)}()&samplersList=.*()&useRegexForSamplerList=true()&recordSubSamples=true()&saveResponseBodyOfFailures=false()
+2023-02-27 20:27:23,776 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.CollectionProperty: [testName=${__P(test.name,Sample)}, nodeName=${__machineName()}, runId=${__P(test.runId,R-18.02-12:30)}, influxDBHttpScheme=http, influxDBHost=${__P(influxdb.hostname,127.0.0.1)}, influxDBPort=${__P(influxdb.port,8086)}, influxDBToken=${__P(influxdb.token,)}, influxDBOrganization=${__P(influxdb.organization,alps)}, influxDBBucket=${__P(influxdb.bucket,jmeter)}, samplersList=.*, useRegexForSamplerList=true, recordSubSamples=true, saveResponseBodyOfFailures=false]
+2023-02-27 20:27:23,776 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: testName=${__P(test.name,Sample)}
+2023-02-27 20:27:23,777 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: testName
+2023-02-27 20:27:23,777 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: testName
+2023-02-27 20:27:23,778 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(test.name,Sample)}
+2023-02-27 20:27:23,778 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(test.name,Sample)}
+2023-02-27 20:27:23,779 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,779 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,780 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: testName=${__P(test.name,Sample)}
+2023-02-27 20:27:23,780 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: nodeName=${__machineName()}
+2023-02-27 20:27:23,781 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: nodeName
+2023-02-27 20:27:23,781 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: nodeName
+2023-02-27 20:27:23,782 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__machineName()}
+2023-02-27 20:27:23,782 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__machineName()}
+2023-02-27 20:27:23,782 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,783 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,783 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: nodeName=${__machineName()}
+2023-02-27 20:27:23,783 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: runId=${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,784 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: runId
+2023-02-27 20:27:23,784 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: runId
+2023-02-27 20:27:23,785 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,785 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,786 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,786 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,786 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: runId=${__P(test.runId,R-18.02-12:30)}
+2023-02-27 20:27:23,787 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBHttpScheme=http
+2023-02-27 20:27:23,787 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBHttpScheme
+2023-02-27 20:27:23,788 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBHttpScheme
+2023-02-27 20:27:23,788 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: http
+2023-02-27 20:27:23,789 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: http
+2023-02-27 20:27:23,789 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,789 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,790 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBHttpScheme=http
+2023-02-27 20:27:23,790 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBHost=${__P(influxdb.hostname,127.0.0.1)}
+2023-02-27 20:27:23,790 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBHost
+2023-02-27 20:27:23,791 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBHost
+2023-02-27 20:27:23,791 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.hostname,127.0.0.1)}
+2023-02-27 20:27:23,792 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.hostname,127.0.0.1)}
+2023-02-27 20:27:23,792 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,792 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,793 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBHost=${__P(influxdb.hostname,127.0.0.1)}
+2023-02-27 20:27:23,793 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBPort=${__P(influxdb.port,8086)}
+2023-02-27 20:27:23,793 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBPort
+2023-02-27 20:27:23,793 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBPort
+2023-02-27 20:27:23,794 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.port,8086)}
+2023-02-27 20:27:23,794 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.port,8086)}
+2023-02-27 20:27:23,795 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,795 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,795 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBPort=${__P(influxdb.port,8086)}
+2023-02-27 20:27:23,795 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBToken=${__P(influxdb.token,)}
+2023-02-27 20:27:23,796 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBToken
+2023-02-27 20:27:23,796 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBToken
+2023-02-27 20:27:23,796 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.token,)}
+2023-02-27 20:27:23,797 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.token,)}
+2023-02-27 20:27:23,797 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,797 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,798 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBToken=${__P(influxdb.token,)}
+2023-02-27 20:27:23,798 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBOrganization=${__P(influxdb.organization,alps)}
+2023-02-27 20:27:23,799 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBOrganization
+2023-02-27 20:27:23,799 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBOrganization
+2023-02-27 20:27:23,799 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.organization,alps)}
+2023-02-27 20:27:23,799 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.organization,alps)}
+2023-02-27 20:27:23,800 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,800 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,801 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBOrganization=${__P(influxdb.organization,alps)}
+2023-02-27 20:27:23,801 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: influxDBBucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,801 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: influxDBBucket
+2023-02-27 20:27:23,801 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBBucket
+2023-02-27 20:27:23,802 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: ${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,802 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: ${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,803 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,803 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,803 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: influxDBBucket=${__P(influxdb.bucket,jmeter)}
+2023-02-27 20:27:23,804 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: samplersList=.*
+2023-02-27 20:27:23,804 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: samplersList
+2023-02-27 20:27:23,804 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: samplersList
+2023-02-27 20:27:23,805 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: .*
+2023-02-27 20:27:23,805 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: .*
+2023-02-27 20:27:23,805 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,806 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,806 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: samplersList=.*
+2023-02-27 20:27:23,806 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: useRegexForSamplerList=true
+2023-02-27 20:27:23,807 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: useRegexForSamplerList
+2023-02-27 20:27:23,807 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: useRegexForSamplerList
+2023-02-27 20:27:23,807 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: true
+2023-02-27 20:27:23,808 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: true
+2023-02-27 20:27:23,808 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,809 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,809 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: useRegexForSamplerList=true
+2023-02-27 20:27:23,809 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: recordSubSamples=true
+2023-02-27 20:27:23,810 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: recordSubSamples
+2023-02-27 20:27:23,810 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: recordSubSamples
+2023-02-27 20:27:23,810 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: true
+2023-02-27 20:27:23,811 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: true
+2023-02-27 20:27:23,811 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,811 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,812 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: recordSubSamples=true
+2023-02-27 20:27:23,812 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.TestElementProperty: saveResponseBodyOfFailures=false
+2023-02-27 20:27:23,812 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: saveResponseBodyOfFailures
+2023-02-27 20:27:23,813 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: saveResponseBodyOfFailures
+2023-02-27 20:27:23,813 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: false
+2023-02-27 20:27:23,814 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: false
+2023-02-27 20:27:23,814 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: =
+2023-02-27 20:27:23,814 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: =
+2023-02-27 20:27:23,815 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: saveResponseBodyOfFailures=false
+2023-02-27 20:27:23,815 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: [testName=${__P(test.name,Sample)}, nodeName=${__machineName()}, runId=${__P(test.runId,R-18.02-12:30)}, influxDBHttpScheme=http, influxDBHost=${__P(influxdb.hostname,127.0.0.1)}, influxDBPort=${__P(influxdb.port,8086)}, influxDBToken=${__P(influxdb.token,)}, influxDBOrganization=${__P(influxdb.organization,alps)}, influxDBBucket=${__P(influxdb.bucket,jmeter)}, samplersList=.*, useRegexForSamplerList=true, recordSubSamples=true, saveResponseBodyOfFailures=false]
+2023-02-27 20:27:23,815 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.config.gui.ArgumentsPanel
+2023-02-27 20:27:23,816 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.config.Arguments
+2023-02-27 20:27:23,816 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: true
+2023-02-27 20:27:23,816 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: true
+2023-02-27 20:27:23,817 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: testName=${__P(test.name,Sample)}()&nodeName=${__machineName()}()&runId=${__P(test.runId,R-18.02-12:30)}()&influxDBHttpScheme=http()&influxDBHost=${__P(influxdb.hostname,127.0.0.1)}()&influxDBPort=${__P(influxdb.port,8086)}()&influxDBToken=${__P(influxdb.token,)}()&influxDBOrganization=${__P(influxdb.organization,alps)}()&influxDBBucket=${__P(influxdb.bucket,jmeter)}()&samplersList=.*()&useRegexForSamplerList=true()&recordSubSamples=true()&saveResponseBodyOfFailures=false()
+2023-02-27 20:27:23,817 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.BackendListenerGui
+2023-02-27 20:27:23,817 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.apache.jmeter.visualizers.backend.BackendListener
+2023-02-27 20:27:23,818 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: InfluxDB 2.0 Backend Listener
+2023-02-27 20:27:23,818 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: InfluxDB 2.0 Backend Listener
+2023-02-27 20:27:23,818 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.BooleanProperty: true
+2023-02-27 20:27:23,819 DEBUG o.a.j.e.u.ValueReplacer: Won't replace true
+2023-02-27 20:27:23,819 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: org.md.jmeter.influxdb2.visualizer.InfluxDatabaseBackendListenerClient
+2023-02-27 20:27:23,819 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: org.md.jmeter.influxdb2.visualizer.InfluxDatabaseBackendListenerClient
+2023-02-27 20:27:23,819 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: 60000
+2023-02-27 20:27:23,820 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: 60000
+2023-02-27 20:27:23,820 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.BooleanProperty: false
+2023-02-27 20:27:23,820 DEBUG o.a.j.e.u.ValueReplacer: Won't replace false
+2023-02-27 20:27:23,821 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.ObjectProperty: org.apache.jmeter.samplers.SampleSaveConfiguration@6787570f
+2023-02-27 20:27:23,821 DEBUG o.a.j.e.u.ValueReplacer: Won't replace org.apache.jmeter.samplers.SampleSaveConfiguration@6787570f
+2023-02-27 20:27:23,822 DEBUG o.a.j.e.u.ValueReplacer: About to replace in property of type: class org.apache.jmeter.testelement.property.StringProperty: /jmeter/repo/results/sample-docker-distributed-27022023-212700.csv
+2023-02-27 20:27:23,822 DEBUG o.a.j.e.u.ValueReplacer: Replacement result: /jmeter/repo/results/sample-docker-distributed-27022023-212700.csv
+2023-02-27 20:27:23,824 DEBUG o.a.j.e.ConvertListeners: num threads = 1
+2023-02-27 20:27:23,825 DEBUG o.a.j.e.ConvertListeners: num threads = 0
+2023-02-27 20:27:23,825 DEBUG o.a.j.e.ConvertListeners: num threads = 1
+2023-02-27 20:27:23,825 DEBUG o.a.j.e.ConvertListeners: num threads = 1
+2023-02-27 20:27:23,826 DEBUG o.a.j.e.ConvertListeners: num threads = 1
+2023-02-27 20:27:23,827 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,827 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,831 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-02-27 20:27:23,840 INFO o.a.j.s.BatchSampleSender: Using batching (client settings) for this run. Thresholds: num=100, time=60000
+2023-02-27 20:27:23,841 INFO o.a.j.s.DataStrippingSampleSender: Using DataStrippingSampleSender for this run
+2023-02-27 20:27:23,841 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,841 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,842 INFO o.a.j.s.BatchSampleSender: Using batching (client settings) for this run. Thresholds: num=100, time=60000
+2023-02-27 20:27:23,843 INFO o.a.j.s.DataStrippingSampleSender: Using DataStrippingSampleSender for this run
+2023-02-27 20:27:23,843 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,843 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,844 INFO o.a.j.s.BatchSampleSender: Using batching (client settings) for this run. Thresholds: num=100, time=60000
+2023-02-27 20:27:23,844 INFO o.a.j.s.DataStrippingSampleSender: Using DataStrippingSampleSender for this run
+2023-02-27 20:27:23,847 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:23,848 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:31,776 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:31,776 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2023-02-27 20:27:32,046 INFO o.a.j.e.ClientJMeterEngine: sent test to 172.28.5.20 basedir='tests'
+2023-02-27 20:27:32,047 INFO o.a.j.e.ClientJMeterEngine: Sending properties {redis.ssl.enable=true, redis.port=6379, influxdb.bucket=jmeter, influxdb.hostname=host.docker.internal, influxdb.port=9086, api.host=httpbin.org, influxdb.token=ScHCbdo6A2goQ9afT3iGnh4VoZUvViEwmH8dpcGWm45B2mfAN2n1EM33oG5otv2cCTvkiO92-CFpC9wHpQXNVQ==, test.name=sample, redis.password=redis@alpana, test.runId=, reports.dir=/jmeter/repo/results, api.user.name=alpana, number.of.threads=1, loop.count=1, api.user.password=httpbin, influxdb.organization=alps, redis.ssl.truststore.password=redis-cert@alpana, ramp.up.seconds=1, redis.host=host.docker.internal, redis.ssl.truststore.file=/tmp/server-ca.jks, redis.ssl.truststore.type=JKS, duration.seconds=300, startup.delay.seconds=5, api.protocol=https}
+2023-02-27 20:27:32,062 INFO o.a.j.e.ClientJMeterEngine: sent run command to 172.28.5.20
+2023-02-27 20:27:32,063 INFO o.a.j.e.DistributedRunner: Remote engines have been started:[172.28.5.20]
+2023-02-27 20:27:33,471 INFO o.a.j.v.b.BackendListener: InfluxDB Backend Listener: Starting worker with class: class org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient and queue capacity: 60000
+2023-02-27 20:27:33,474 INFO o.a.j.v.b.BackendListener: InfluxDB Backend Listener: Started  worker with class: class org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient
+2023-02-27 20:27:33,703 INFO o.a.j.v.b.BackendListener: InfluxDB 2.0 Backend Listener: Starting worker with class: class org.md.jmeter.influxdb2.visualizer.InfluxDatabaseBackendListenerClient and queue capacity: 60000
+2023-02-27 20:27:33,708 INFO o.a.j.v.b.BackendListener: InfluxDB 2.0 Backend Listener: Started  worker with class: class org.md.jmeter.influxdb2.visualizer.InfluxDatabaseBackendListenerClient
+2023-02-27 20:27:33,714 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: InfluxDBClientFactory is going to use the following properties:
+2023-02-27 20:27:33,728 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: URL --> http://host.docker.internal:9086
+2023-02-27 20:27:33,729 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: Token --> ScHCbdo6A2goQ9afT3iGnh4VoZUvViEwmH8dpcGWm45B2mfAN2n1EM33oG5otv2cCTvkiO92-CFpC9wHpQXNVQ==
+2023-02-27 20:27:33,730 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: Organization --> alps
+2023-02-27 20:27:33,731 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: Bucket --> jmeter
+2023-02-27 20:27:34,948 INFO o.a.j.JMeter: Started remote host:  172.28.5.20 (1677529654948)
+2023-02-27 20:28:44,507 INFO o.a.j.v.b.BackendListener: Worker ended
+2023-02-27 20:28:44,510 INFO o.a.j.v.b.i.InfluxdbBackendListenerClient: Sending last metrics to InfluxDB
+2023-02-27 20:28:44,529 INFO o.a.j.v.b.i.HttpMetricsSender: Destroying 
+2023-02-27 20:28:44,624 INFO o.a.j.v.b.BackendListener: Worker ended
+2023-02-27 20:28:44,625 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: Shutting down influxDB scheduler...
+2023-02-27 20:28:44,661 INFO o.m.j.i.v.InfluxDatabaseBackendListenerClient: influxDB scheduler terminated!
+2023-02-27 20:28:44,683 INFO o.a.j.r.Summariser: summary =      8 in 00:01:10 =    0.1/s Avg:   965 Min:     1 Max:  2805 Err:     1 (12.50%)
+2023-02-27 20:28:44,685 INFO o.a.j.JMeter: Finished remote host: 172.28.5.20 (1677529724685)
+2023-02-27 20:28:44,686 INFO o.a.j.JMeter: All remote engines have ended test, starting RemoteTestStopper thread
+2023-02-27 20:28:49,692 INFO o.a.j.JMeter: Interrupting RMI Reaper

@@ -1,0 +1,9 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1677529654980,2805,Initialize jedis connection,200,OK,172.28.5.20-setUp Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677529658327,1791,Get IP: c08b548ffa02-27022023-2127381-50004,200,OK,172.28.5.20-Thread Group Client Inspection 3-1,text,true,,261,142,1,2,https://httpbin.org/ip,1787,0,1638
+1677529658327,2058,BasicAuth: c08b548ffa02-27022023-2127381-67457,401,UNAUTHORIZED,172.28.5.20-Thread Group Auth 2-1,,false,,250,165,1,1,https://httpbin.org/basic-auth/alpana/httpbin,2058,0,1638
+1677529663013,992,Get: c08b548ffa02-27022023-2127430-43933,200,OK,172.28.5.20-Thread Group HTTP Methods 1-1,text,true,,526,143,1,1,https://httpbin.org/get,992,0,767
+1677529724233,62,Set up jedis connection,200,OK,172.28.5.20-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677529724445,13,Get Redis Data: Get IP: c08b548ffa02-27022023-2127381-50004,200,OK,172.28.5.20-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677529724467,1,Get Redis Data: BasicAuth: c08b548ffa02-27022023-2127381-67457,200,OK,172.28.5.20-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1677529724477,1,Get Redis Data: Get: c08b548ffa02-27022023-2127430-43933,200,OK,172.28.5.20-tearDown Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0

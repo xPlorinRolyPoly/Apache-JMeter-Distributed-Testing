@@ -1,0 +1,102 @@
+version: '3.5'
+services:
+  redis:
+    image: redis
+    container_name: redis
+    command: redis-server --requirepass "redis@alpana" --tls-port 6379 --port 0 --tls-cert-file domain.crt --tls-key-file domain.key --tls-ca-cert-file domain.crt --tls-auth-clients no
+    ports:
+      - "6379:6379"
+    volumes:
+      - ../redis/redis-domain.crt:/data/domain.crt
+      - ../redis/redis-domain.key:/data/domain.key
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.10
+
+  influxdb:
+    image: influxdb:2.0.6-alpine
+    container_name: influxdb
+    env_file:
+      - influxdb/env
+    volumes:
+      - ./influxdb/docker-volume/:/var/lib/influxdb/
+      - ./influxdb/dashboards:/home/dashboards
+    ports:
+      - "9086:8086"
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.11
+
+  grafana:
+    image: grafana/grafana:8.0.1
+    container_name: grafana
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.12
+    ports:
+      - "3000:3000"
+    env_file:
+      - grafana/env
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - influxdb
+
+  jmeter-server-1:
+    image: alpanachaphalkar/jmeter:latest
+    container_name: jmeter-server-1
+    command: server
+    tty: true
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.20
+    volumes:
+      - ../.:/jmeter/repo
+      - ../redis/redis-db-ca.jks:/tmp/server-ca.jks
+      - ../logs/sample-docker-compose-jmeter-slave-1.log:/jmeter/apache-jmeter-5.4.3/jmeter-server.log
+    depends_on:
+      - redis
+      - influxdb
+
+  jmeter-server-2:
+    image: alpanachaphalkar/jmeter:latest
+    container_name: jmeter-server-2
+    command: server
+    tty: true
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.21
+    volumes:
+      - ../.:/jmeter/repo
+      - ../redis/redis-db-ca.jks:/tmp/server-ca.jks
+      - ../logs/sample-docker-compose-jmeter-slave-2.log:/jmeter/apache-jmeter-5.4.3/jmeter-server.log
+    depends_on:
+      - redis
+      - influxdb
+
+  jmeter-master:
+    image: alpanachaphalkar/jmeter:latest
+    container_name: jmeter-master
+    command: master
+    tty: true
+    networks:
+      jmeter:
+        ipv4_address: 172.28.5.30
+    volumes:
+      - ../.:/jmeter/repo
+      - ../redis/redis-db-ca.jks:/tmp/server-ca.jks
+    depends_on:
+      - redis
+      - influxdb
+      - jmeter-server-1
+      - jmeter-server-2
+
+networks:
+  jmeter:
+    name: jmeter
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+          gateway: 172.28.5.254

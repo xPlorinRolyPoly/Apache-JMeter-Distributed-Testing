@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-properties
+data:
+  local-minikube-dev.properties: |
+    ## Test plan properties
+    number.of.threads=1
+    ramp.up.seconds=1
+    loop.count=1
+    duration.seconds=300
+    startup.delay.seconds=5
+    ## This is to write test name and runid to Influxdb2.
+    test.name=sample
+    test.runId=
+    ## API propeties
+    api.host=httpbin.org
+    api.protocol=https
+    ## Report paths
+    reports.dir=/jmeter/repo/results
+    ##############################################################################################
+    ## Vault properties
+    ##############################################################################################
+    ## Redis properties
+    redis.ssl.enable=true
+    redis.ssl.truststore.file=/tmp/server-ca.jks
+    redis.ssl.truststore.type=JKS
+    redis.host=redis-svc.redis.svc.cluster.local
+    redis.port=6379
+    redis.password=redis@alpana
+    redis.ssl.truststore.password=redis-cert@alpana
+    ## InfluxDB properties
+    # Remote properties
+    # Specific the SampleSender class to let remote machine directly send to Influx Database
+    # Ignore this property if the test is not running in distributed mode
+    mode=org.ifisolution.plugins.samplers.InfluxSampleSender
+    # Plugin properties
+    # Setting this to true to let the master send test result to Influx Database
+    master_send_result=true
+    # Test Specific properties
+    # Set the option to save error response to true/false
+    # By default, this plugin never save error response to reduce workload
+    save_error_response=true
+    # Test Specific properties
+    # Set the option to save sub result from sample result
+    # By default, this property is set to true
+    save_measure_sub_result=
+    influxdb.hostname=influxdb-svc.influxdb.svc.cluster.local
+    influxdb.organization=alps
+    influxdb.port=8086
+    influxdb.bucket=jmeter
+    ##############################################################################################
