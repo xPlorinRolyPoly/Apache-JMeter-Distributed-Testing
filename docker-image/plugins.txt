@@ -1,0 +1,1 @@
+jpgc-csvars=0.1,jpgc-functions=2.1,jpgc-redis=0.5,jmeter.backendlistener.azure=0.2.6,jmeter-components,jpgc-casutg=2.9,jpgc-dummy=0.4,jpgc-prmctl=0.4,jpgc-synthesis=2.2,jpgc-cmd=2.2,jpgc-filterresults=2.2,jpgc-casutg=2.10,bzm-parallel=0.11
